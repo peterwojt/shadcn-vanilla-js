@@ -1,39 +1,38 @@
 "use strict";
-window.document.querySelector("head").children[length].innerHTML = `<link rel=stylesheet href=/assets/styles.css></link>`;
 class outlined_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("outlined-button");
+        this.classList.add("outlinedButton");
     }
 }
 class destructive_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("destructive-button");
+        this.classList.add("destructiveButton");
     }
 }
 class ghost_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("ghost-button");
+        this.classList.add("ghostButton");
     }
 }
 class link_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("link-button");
+        this.classList.add("linkButton");
     }
 }
 class primary_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("primary-button");
+        this.classList.add("primaryButton");
     }
 }
 class secondary_button extends HTMLButtonElement {
     constructor() {
         super();
-        this.classList.add("secondary-button");
+        this.classList.add("secondaryButton");
     }
 }
 window.customElements.define("outlined-button", outlined_button, { extends: "button" });
