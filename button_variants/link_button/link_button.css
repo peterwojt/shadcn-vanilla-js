@@ -1,0 +1,41 @@
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.linkButton {
+    color: #E1E1E1;
+    font-size: 16px; /* Adjust as needed */
+    text-decoration: none; /* Remove default underline */
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative; /* Needed for underline positioning */
+    margin: 5px;
+    transition: transform 0.2s ease-out;
+    transition: background-color 0.3s ease;
+}
+
+.linkButton:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the underline position */
+    width: 100%;
+    height: 2px;
+    background-color: #E1E1E1; /* Adjust underline color */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.linkButton:hover:after {
+    opacity: 1;
+}
+.linkButton:active {
+    transform: scale(0.98);
+}
