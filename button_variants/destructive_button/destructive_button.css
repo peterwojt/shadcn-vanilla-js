@@ -1,0 +1,29 @@
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.destructiveButton{
+    background-color: #752522;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #E1E1E1;
+    font-size: 16px; /* Adjust as needed */
+    text-align: center;
+    transition: transform 0.2s ease;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+.destructiveButton:hover {
+    background-color: #6a231f;
+}
+
+.destructiveButton:active {
+    transform: scale(0.98);
+}
