@@ -1,12 +1,3 @@
-body {
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
-}
-
 .primaryButton{
     background-color: #E1E1E1 ;
     border: none;
