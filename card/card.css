@@ -1,0 +1,22 @@
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.card {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* Centered horizontally */
+    max-width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border: 1px solid #27272a; /* Light border */
+    color: #E1E1E1;
+    font-size: 16px; /* Adjust as needed */
+    text-align: center;
+}
+
