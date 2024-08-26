@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/peterwojt/shadcn-vanilla-js/main/schema.json",
+    "element": "outlined-button",
+    "class": "outlinedButton",
+    "name": "Outlined Button",
+    "type": "extension",
+    "extends": "button",
+    "description": "A button with an outlined border",
+    "author": "httphypixelnet",
+    "dependencies": {
+        "css": ["outlined_button.css"]
+    },
+    "version": "1.0.0"
+}
