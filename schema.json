@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": ["name", "type", "dependencies", "element"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the custom element"
+      },
+      "element": {
+        "type": "string",
+        "description": "The name used to reference the custom element in HTML (e.g., 'my-element'). Required if type is 'new'. No spaces."
+      },
+      "class": {
+        "type": "string",
+        "description": "The class name of the custom element as defined in your CSS"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["extension", "new"],
+        "description": "Whether this component extends an existing HTML element or creates a new custom element"
+      },
+      "extends": {
+        "type": "string",
+        "description": "The name of the HTML element being extended (e.g., 'button', 'div'). Required if type is 'extension'."
+      },
+      "description": {
+        "type": "string",
+        "description": "A brief description of the component"
+      },
+      "version": {
+        "type": "string",
+        "description": "The version of the component"
+      },
+      "author": {
+        "type": "string",
+        "description": "The author of the component"
+      },
+      "dependencies": {
+        "type": "object",
+        "properties": {
+            "css": {
+                "type": "array",
+                "items": { "type": "string" }
+            },
+            "js": {
+                "type": "array",
+                "items": { "type": "string" }
+            }
+        },
+        "description": "Dependencies required by this component"
+      }
+    },
+    "if": {
+      "properties": { "type": { "const": "extension" } }
+    },
+    "then": {
+      "required": ["extends"]
+    }
+  }
